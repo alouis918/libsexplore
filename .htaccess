@@ -13,8 +13,8 @@
     # Handle Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
-    #RewriteRule ^(.*)$ /$1 [L]
-    RewriteRule ^ index.php [L]
+    RewriteRule ^(.*)$ /$1 [L]
+    #RewriteRule ^ index.php [L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
