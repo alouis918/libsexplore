@@ -1,8 +1,7 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Monbord\Http\Controllers;
 
-use App\Http\Requests;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
