@@ -14,25 +14,36 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::group(['middleware' => 'web'], function (){
-    Route::auth();
-    Route::get('/home', 'HomeController@index');
-});
 
-Route::get('/logout', 'Auth\AuthController@getLogout');
+
+/**
+ *  Authentification
+ */
+Route::auth();
+Route::get('/home', 'HomeController@index');
+
+
 /**
  * Quotes route groupe
  */
 Route::get('/quote', 'QuoteController@index');
+Route::post('/new', 'QuoteController@postQuote')->name('create');
 
-
-Route::get('/home', 'HomeController@index');
+/**
+ * Task Routes
+ */
 Route::get('/tasks','TaskController@index')->name('tasks');
 Route::post('/task', 'TaskController@store');
 Route::delete('/task/{task}', 'TaskController@destroy');
 Route::get('/task/view/{task}', 'TaskController@viewTask');
 Route::patch('/task/view/{task}/update', 'TaskController@updateTask');
 
-Route::auth();
 
-Route::get('/home', 'HomeController@index');
+/*
+Route::group(['middleware' => 'web'], function (){
+    Route::auth();
+    Route::get('/home', 'HomeController@index');
+   Route::get('/home', 'HomeController@index');
+   Route::get('/logout', 'Auth\AuthController@getLogout');
+});
+*/

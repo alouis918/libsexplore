@@ -11,66 +11,10 @@
     <title>@yield('title')</title>
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
-    <style>
-        html, body {
-            background-color: #fff;
-            color: #636b6f;
-            font-family: 'Lato';
-            font-weight: 100;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .fa-btn {
-            margin-right: 6px;
-        }
-        .full-height {
-            height: 100vh;
-        }
-
-        .flex-center {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
-
-        .position-ref {
-            position: relative;
-        }
-
-        .top-right {
-            position: absolute;
-            right: 10px;
-            top: 18px;
-        }
-
-        .content {
-            text-align: center;
-        }
-
-        .title {
-            font-size: 84px;
-        }
-
-        .links > a {
-            color: #636b6f;
-            padding: 0 25px;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        .m-b-md {
-            margin-bottom: 30px;
-        }
-    </style>
     <link href="{{URL::to('css/app.css')}}" rel="stylesheet">
+    <link href="{{URL::to('css/style.css')}}" rel="stylesheet">
     <link href="{{URL::to('DataTables/datatables.min.css')}}" rel="stylesheet">
     <link href="{{URL::to('font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
-
-
 </head>
 <body>
 <nav class="navbar navbar-default navbar-static-top">

@@ -1,0 +1,143 @@
+
+html, body {
+
+    color: #636b6f;
+    font-family: 'Lato';
+    font-weight: 100;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    margin:0;
+    line-height: 16px;
+    font-size: 16px;
+}
+/*  Main section  */
+.main{
+    width: 80%;
+    margin: 48px auto ;
+}
+.edit-quotes{
+    text-align: center;
+}
+.quotes{
+    text-align: center;
+}
+.quote{
+    position: relative;
+    display: inline-block;
+    border: 2px solid #faf2cc;
+    width: calc(25% - 48px);
+    margin: 32px;
+    padding: 16px;
+    vertical-align: top;
+    background-color:#fff6e0 ;
+}
+.quote.first-in-line{
+    margin-left: 0px;
+}
+.quote.last-in-line{
+    margin-right: 0px;
+}
+.quote .info{
+    margin-top: 8px;
+    font-size: 12px;
+    font-family: sans-serif;
+    color:#ccc;
+}
+.quote .info a{
+    color:#ccc ;
+}
+.quote .info a:hover,
+.quote .info a:active{
+    color: #aaa;
+}
+.quote .delete{
+    position: absolute;
+    top: 0px;
+    right: 4px;
+    font-family:sans-serif;
+}
+.quote .delete a{
+    color: #bbb;
+    text-decoration: none;
+}
+.quote .delete a:hover,
+.quote .delete a:active{
+    color: red;
+}
+.info-box{
+    text-align: center;
+    margin:auto;
+    padding: 16px;
+    border-radius: 3px;
+    width: 350px;
+}
+.info-box.fail{
+    border:1px solid #ff6b5a;
+    backgroud-color:#ffc2ba;
+    color: #fff6b6;
+}
+.info-box.success{
+    border:1px solid #46cc71;
+    background-color:#bdffb6 ;
+    color: #46cc71;
+}
+.filter-bar{
+    width: 100%;
+    padding:16px;
+    background-color:#f9ffc3 ;
+    color: black;
+    text-align: center;
+}
+.pagination{
+    font-size: 20px;
+}
+.pagination a{
+    color:black;
+}
+.pagination a:hover,
+.pagination a:active{ color: #ccc;}
+.fa-btn {
+    margin-right: 6px;
+}
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
