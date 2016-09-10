@@ -7,3 +7,4 @@ Homestead.json
 
 /local/.env
 .idea
+.idea/*.xml
