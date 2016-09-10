@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('title')
+    Task Manager
+@endsection
 @section('content')
     <div class="panel-body">
         @include('common.errors')

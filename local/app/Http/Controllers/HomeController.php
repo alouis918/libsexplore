@@ -2,6 +2,7 @@
 
 namespace Monbord\Http\Controllers;
 
+use Monbord\Http\Requests;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller

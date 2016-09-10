@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('title')
+    Task View
+@endsection
 @section('content')
     @if($task)
         @include('common.errors')
